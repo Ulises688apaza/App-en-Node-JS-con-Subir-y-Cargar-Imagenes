@@ -1,0 +1,22 @@
+extends layout
+
+block content
+    form(action="/subirfoto", enctype="multipart/form-data", method="post")
+        | Seleccione una foto:
+        input(type="file", name="foto")
+        br
+        | Seleccione una foto:
+        input(type="file", name="foto")
+        br
+        | Enviar
+        input(type="submit", value="subir")
+//- Recordatorio: Errores en la sintaxis
+//-  <form method="post" action"/subirfoto" enctype="multipart/form-data">
+//-  Seleccione una foto:
+//-  <input type="file" name="foto">
+//-  <br>
+//-  Seleccione una foto:
+//-  <input type="file" name="foto">
+//-  <br>
+//-  <input type="submit" value="subir">
+//-  </form>
